@@ -46,7 +46,7 @@ These steps will help you deploy a Django project with no apps from start to fin
 10. Create a Procfile
 
     - `echo "web: gunicorn YOUR_DJANGO_APP_NAME.wsgi:application" > Procfile`
-      - `YOUR_DJANGO_APP_NAME` should be the exact same name as the name of the Django project that you created in step 3. It is case sensitive. Make sure that your Procfile has a capital P and that it follows the format above exactly, otherwise your app won't deploy.
+      - `YOUR_DJANGO_APP_NAME` should be the exact same name as the name of the Django project that you created in step 3. It is case sensitive. Make sure that your Procfile has a capital P and that it follows the format above exactly, otherwise your app won't deploy. In the case of this app, I would write `echo "web: gunicorn Tester.wsgi:application" > Procfile`. 
 
 11. Create your requirements.txt file.
 
